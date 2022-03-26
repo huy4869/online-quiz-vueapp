@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UKcRXUnBKLG+5hQIEMOmLr///ZDBgzlQbwrSgI3PXYtbe2hDKYbjt+kmpJeleocPPAlbvoO4wd6yWMI3Qu/W0w==",
+  "dgSpecHash": "LiV0o/SblfLctykB+iTxZQ5EPnM4Ijl8Utq2/xr4J/DB1ZkJejCUwrp3OPDQwsEwOoOpbNeSCLJ/laJn6nsLTg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
+  "projectFilePath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tvhtr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.9\\microsoft.aspnetcore.authentication.jwtbearer.5.0.9.nupkg.sha512",
@@ -135,10 +135,7 @@
     "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

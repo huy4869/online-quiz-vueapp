@@ -2,46 +2,44 @@
   <div id="home">
     <div class="userbox" id="login">
       <div class="title"><h1 class="hightlight-text">Login Form</h1></div>
-      <form action="" id="user_login" method="POST">
-        <table border="0">
-          <tr>
-            <td>User Name:</td>
-            <td>
-              <input
-                class="login"
-                required
-                type="email"
-                name="username"
-                id="user_name"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td>Password:</td>
-            <td>
-              <input
-                class="login"
-                required
-                type="password"
-                name="password"
-                id="user_password"
-              />
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="action-button" type="submit" value="Sign in" /><a
-                class="register"
-                href="#"
-                title="Register"
-                >Register</a
-              >
-            </td>
-          </tr>
-        </table>
-      </form>
+      <table border="0">
+        <tr>
+          <td>User Name:</td>
+          <td>
+            <input
+              class="login"
+              required
+              type="email"
+              v-model="email"
+              name="username"
+              id="user_name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td>
+            <input
+              class="login"
+              required
+              v-model="password"
+              type="password"
+              name="password"
+              id="user_password"
+            />
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <!-- <input class="action-button" value="Sign in" @click="login" /> -->
+            <button class="action-button"  @click="login">Sign in</button>
+
+            <a class="register" href="#" title="Register">Register</a>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -71,7 +69,7 @@ export default {
   },
   methods: {
     async login() {
-      await Axios.post(``, {
+      await Axios.post(`https://localhost:44312/api/Token`, {
         Email: this.email,
         Password: this.password,
       })
@@ -81,7 +79,7 @@ export default {
             { httpOnly: true },
           ]);
           window.location.reload();
-          this.$router.push({ name: "Home" });
+          this.$router.push({ name: "home" });
         })
         .catch((error) => {
           console.log(error);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj": {}
+    "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj": {
+    "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
+        "projectUniqueName": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
         "projectName": "OnlineQuiz",
-        "projectPath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
+        "projectPath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
         "packagesPath": "C:\\Users\\tvhtr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\back-end\\OnlineQuiz\\OnlineQuiz\\obj\\",
+        "outputPath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\tvhtr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,20 +79,8 @@
           "warn": true,
           "downloadDependencies": [
             {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
               "name": "Microsoft.NETCore.App.Host.win-x64",
               "version": "[5.0.12, 5.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
             }
           ],
           "frameworkReferences": {
