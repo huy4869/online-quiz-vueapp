@@ -1,3 +1,6 @@
+GO
+create database OnlineQuiz
+GO
 use OnlineQuiz
 
 create table Users (
@@ -41,9 +44,9 @@ create table Result (
 INSERT [dbo].[Users] ([userName], [password], [Role], [Email]) VALUES (N'Student', N'123456', 0, N'email@email.com')
 INSERT [dbo].[Users] ([userName], [password], [Role], [Email]) VALUES (N'Teacher', N'123456', 1, N'email2@email.com')
 
-INSERT [dbo].[Questions] (ID, [questionContent], [createdAt]) VALUES (1, N'What is the answer?', CAST(N'2020-04-09' AS Date))
-INSERT [dbo].[Questions] (ID, [questionContent], [createdAt]) VALUES (2, N'Why this question?', CAST(N'2020-04-11' AS Date))
-INSERT [dbo].[Questions] (ID, [questionContent], [createdAt]) VALUES (3, N'Lorem ipsum ahihihhihihhhhhihihiihhhi', CAST(N'2020-04-11' AS Date))
+INSERT [dbo].[Questions] ([questionContent], [createdAt]) VALUES ( N'What is the answer?', CAST(N'2020-04-09' AS Date))
+INSERT [dbo].[Questions] ( [questionContent], [createdAt]) VALUES ( N'Why this question?', CAST(N'2020-04-11' AS Date))
+INSERT [dbo].[Questions] ( [questionContent], [createdAt]) VALUES ( N'Lorem ipsum ahihihhihihhhhhihihiihhhi', CAST(N'2020-04-11' AS Date))
 
 INSERT [dbo].[Options] (ID, questionID, content, isRight) VALUES (1, 1, N'False')
 INSERT [dbo].[Options] (ID, questionID, content, isRight) VALUES (1, 2, N'Answer')
