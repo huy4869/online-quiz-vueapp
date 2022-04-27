@@ -6,6 +6,7 @@ import VueCookies from 'vue-cookies'
 
 Vue.config.productionTip = false
 Vue.use(VueCookies)
+Vue.use(require('vue-moment'));
 
 new Vue({
   router,

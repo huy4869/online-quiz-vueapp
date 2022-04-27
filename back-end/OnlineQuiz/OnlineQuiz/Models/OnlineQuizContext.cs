@@ -37,9 +37,8 @@ namespace OnlineQuiz.Models
 
             modelBuilder.Entity<Option>(entity =>
             {
-                entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
-                    .HasColumnName("ID");
+                entity.HasKey(e => new { e.QuestionId, e.Id })
+                    .HasName("PK__Answer__34BBBF1BABF478B9");
 
                 entity.Property(e => e.Content)
                     .IsRequired()
@@ -49,10 +48,10 @@ namespace OnlineQuiz.Models
 
                 entity.Property(e => e.QuestionId).HasColumnName("questionID");
 
-                entity.HasOne(d => d.Question)
+                /*entity.HasOne(d => d.Question)
                     .WithMany(p => p.Options)
                     .HasForeignKey(d => d.QuestionId)
-                    .HasConstraintName("FK__Options__questio__29572725");
+                    .HasConstraintName("FK__Options__questio__29572725");*/
             });
 
             modelBuilder.Entity<Question>(entity =>

@@ -1,14 +1,14 @@
 <template>
   <div class="navigation-container">
-    
     <div class="navigation">
       <div class="link">
         <router-link :to="{ name: 'home' }">Home</router-link>
+        <span v-if="this.$cookies.get('token') != null">
         <router-link :to="{ name: 'takequiz' }">Take Quiz</router-link>
         <router-link :to="{ name: 'makequiz' }">Make Quiz</router-link>
-        <router-link :to="{ name: 'manage' }">Manage Quiz</router-link>
+        <router-link :to="{ name: 'manage', params: {pageIndex: 1} }">Manage Quiz</router-link>
         <a @click="logOut">Log Out</a>
-        
+        </span>
       </div>
     </div>
   </div>
@@ -19,9 +19,13 @@ export default {
   name: "navigation-container",
   methods: {
     logOut() {
+      let allCookies = this.$cookies.keys();
+      allCookies.forEach((element) => {
+        this.$cookies.remove(element);
+      });
       this.$router.push("/");
       window.location.reload();
-    }
+    },
   },
 };
 </script>
@@ -46,5 +50,6 @@ export default {
 }
 a {
   margin-left: 37px;
+  cursor: pointer;
 }
 </style>

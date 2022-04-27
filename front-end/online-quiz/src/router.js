@@ -18,36 +18,43 @@ export const router = new VueRouter({
       path: "/",
       name: "home",
       component: Home,
+      props: true,
     },
     {
       path: "/makequiz",
       name: "makequiz",
       component: MakeQuiz,
+      props: true,
     },
     {
       path: "/takequiz",
       name: "takequiz",
       component: TakeQuizWelcome,
+      props: true,
     },
     {
-      path: "/start",
+      path: "/start/:questionId",
       name: "start",
       component: TakeQuizStart,
+      props: true,
     },
     {
       path: "/over",
       name: "over",
       component: TakeQuizOver,
+      props: true,
     },
     {
-      path: "/manage",
+      path: "/manage/:pageIndex",
       name: "manage",
       component: ManagerQuiz,
+      props: true,
     },
     {
       path: "/register",
       name: "register",
-      component: Register
+      component: Register,
+      props: true,
     },
   ],
 });

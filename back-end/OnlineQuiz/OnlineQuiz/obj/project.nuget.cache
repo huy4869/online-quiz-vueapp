@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LiV0o/SblfLctykB+iTxZQ5EPnM4Ijl8Utq2/xr4J/DB1ZkJejCUwrp3OPDQwsEwOoOpbNeSCLJ/laJn6nsLTg==",
+  "dgSpecHash": "PBJn9CPH9eYuPjPv+KI/7SxivKAg10efE1+NJsK3/d6Uo61QpXeeJrwxlBx1+IUBRXILJRWhXEwMJyWmE3YJMg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tvhtr\\OneDrive\\Máy tính\\online-quiz\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
+  "projectFilePath": "C:\\Users\\tvhtr\\Desktop\\Git\\online-quiz-vueapp\\back-end\\OnlineQuiz\\OnlineQuiz\\OnlineQuiz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tvhtr\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.9\\microsoft.aspnetcore.authentication.jwtbearer.5.0.9.nupkg.sha512",
@@ -20,13 +20,13 @@
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.8\\microsoft.entityframeworkcore.5.0.8.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.8\\microsoft.entityframeworkcore.abstractions.5.0.8.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.8\\microsoft.entityframeworkcore.analyzers.5.0.8.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.8\\microsoft.entityframeworkcore.design.5.0.8.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.8\\microsoft.entityframeworkcore.relational.5.0.8.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.8\\microsoft.entityframeworkcore.sqlserver.5.0.8.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.8\\microsoft.entityframeworkcore.tools.5.0.8.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.16\\microsoft.entityframeworkcore.5.0.16.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.16\\microsoft.entityframeworkcore.abstractions.5.0.16.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.16\\microsoft.entityframeworkcore.analyzers.5.0.16.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.16\\microsoft.entityframeworkcore.design.5.0.16.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.16\\microsoft.entityframeworkcore.relational.5.0.16.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.16\\microsoft.entityframeworkcore.sqlserver.5.0.16.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.16\\microsoft.entityframeworkcore.tools.5.0.16.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
@@ -57,6 +57,7 @@
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\tvhtr\\.nuget\\packages\\pagedlist\\1.17.0\\pagedlist.1.17.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
@@ -134,8 +135,18 @@
     "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\tvhtr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+    "C:\\Users\\tvhtr\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PagedList 1.17.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "PagedList",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

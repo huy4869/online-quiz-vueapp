@@ -16,6 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace OnlineQuiz
 {
@@ -41,11 +42,13 @@ namespace OnlineQuiz
             }));
             services.AddControllers();
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options => {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
                 options.RequireHttpsMetadata = false;
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters()
                 {
+                    RoleClaimType = "Role",
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidAudience = Configuration["Jwt:Audience"],
@@ -53,6 +56,22 @@ namespace OnlineQuiz
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
             });
+            services.AddMvc(options =>
+            {
+                options.SuppressAsyncSuffixInActionNames = false;
+            });
+
+            services.AddControllers().AddJsonOptions(x =>
+               x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
+
+
+            /*            services.AddControllers(
+                options =>
+                {
+                    options.SuppressAsyncSuffixInActionNames = false;
+                }
+            );*/
 
             services.AddSwaggerGen(c =>
             {
@@ -68,12 +87,13 @@ namespace OnlineQuiz
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "OnlineQuiz v1"));
+
             }
 
             app.UseHttpsRedirection();
 
             app.UseRouting();
-            
+
             //add
             app.UseAuthentication();
 
@@ -82,6 +102,10 @@ namespace OnlineQuiz
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

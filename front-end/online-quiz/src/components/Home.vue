@@ -1,6 +1,9 @@
 <template>
   <div id="home">
-    <div class="userbox" id="login">
+    <div class="title" v-if="this.$cookies.get('token') != null">
+      Welcome <span class="hightlight-text">{{ getName }}</span>
+    </div>
+    <div v-if="this.$cookies.get('token') == null" class="userbox" id="login">
       <div class="title"><h1 class="hightlight-text">Login Form</h1></div>
       <table border="0">
         <tr>
@@ -8,8 +11,7 @@
           <td>
             <input
               class="login"
-              required
-              type="email"
+              requiredtype="email"
               v-model="email"
               name="username"
               id="user_name"
@@ -34,9 +36,9 @@
           <td></td>
           <td>
             <!-- <input class="action-button" value="Sign in" @click="login" /> -->
-            <button class="action-button"  @click="login">Sign in</button>
+            <button class="action-button" @click="login">Sign in</button>
 
-            <a class="register" href="#" title="Register">Register</a>
+            <router-link to="register" class="register">Register</router-link>
           </td>
         </tr>
       </table>
@@ -63,8 +65,8 @@ export default {
   },
   data() {
     return {
-      email: "email@email.com",
-      password: "123456",
+      email: "teacher@gmail.com",
+      password: "1",
     };
   },
   methods: {
@@ -75,11 +77,12 @@ export default {
       })
         .then((respose) => {
           console.log(respose.data);
+          //store token into cookies
           this.$cookies.set("token", respose.data, "1d", "", "", [
             { httpOnly: true },
           ]);
+          this.$router.push({ name: "takequiz" });
           window.location.reload();
-          this.$router.push({ name: "home" });
         })
         .catch((error) => {
           console.log(error);
