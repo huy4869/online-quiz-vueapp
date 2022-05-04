@@ -23,7 +23,7 @@ export default {
       allCookies.forEach((element) => {
         this.$cookies.remove(element);
       });
-      this.$router.push("/");
+      this.$router.push("/home");
       window.location.reload();
     },
   },
