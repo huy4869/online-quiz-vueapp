@@ -81,7 +81,6 @@ export default {
           this.$cookies.set("token", respose.data, "1d", "", "", [
             { httpOnly: true },
           ]);
-          window.location.reload();
           this.$router.push({ name: "takequiz" });
           window.location.reload();
         })
