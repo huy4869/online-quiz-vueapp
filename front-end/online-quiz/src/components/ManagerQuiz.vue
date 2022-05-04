@@ -73,7 +73,7 @@ export default {
       let token = this.$cookies.get("token");
       if (this.pageIndex == null) this.pageIndex = 1;
       await Axios.get(
-        "https://localhost:44312/api/Questions/GetPagingQuestion",
+        "https://onlinequizapi.azurewebsites.net/api/Questions/GetPagingQuestion",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -101,7 +101,7 @@ export default {
     async getPages() {
       let token = this.$cookies.get("token");
       await Axios.get(
-        `https://localhost:44312/api/Questions/GetTotalQuestion`,
+        `https://onlinequizapi.azurewebsites.net/api/Questions/GetTotalQuestion`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -119,7 +119,7 @@ export default {
     async deleteQuestion(id) {
       let token = this.$cookies.get("token");
       await Axios.delete(
-        `https://localhost:44312/api/Questions/${id}`,
+        `https://onlinequizapi.azurewebsites.net/api/Questions/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

@@ -71,7 +71,7 @@ export default {
   },
   methods: {
     async login() {
-      await Axios.post(`https://localhost:44312/api/Token`, {
+      await Axios.post(`https://onlinequizapi.azurewebsites.net/api/Token`, {
         Email: this.email,
         Password: this.password,
       })

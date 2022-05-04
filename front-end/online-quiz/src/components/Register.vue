@@ -87,7 +87,7 @@ export default {
       if (this.userName == "" || this.password == "" || this.email == "") {
         alert("Please fill all the fields!");
       } else {
-        await Axios.post("https://localhost:44312/api/Users", newUser)
+        await Axios.post("https://onlinequizapi.azurewebsites.net/api/Users", newUser)
           .then((response) => {
             console.log(response.data);
             if (response.data == "") {

@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     async doQuiz() {
-      await Axios.get(`https://localhost:44312/api/Questions/GetToTalQuestion`)
+      await Axios.get(`https://onlinequizapi.azurewebsites.net/api/Questions/GetToTalQuestion`)
         .then((response) => {
           if (
             this.questionNumber <= parseInt(response.data) &&
@@ -56,7 +56,7 @@ export default {
     async getQuestions() {
       let questionCodes = new Array();
       await Axios.get(
-        `https://localhost:44312/api/Questions/GetQuestionCodes`,
+        `https://onlinequizapi.azurewebsites.net/api/Questions/GetQuestionCodes`,
         {
           params: {
             numberOfQuestion: this.questionNumber,

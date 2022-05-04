@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="OnlineQuizAPI" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\tvhtr\\Desktop\\Git\\online-quiz-vueapp\\back-end\\OnlineQuiz\\OnlineQuiz\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="OnlineQuiz.Models.OnlineQuizContext" description="" value="Data Source=tcp:onlinequizserver.database.windows.net,1433;Initial Catalog=OnlineQuiz;User Id=huychan@onlinequizserver;Password=Aptx@4869" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\tvhtr\\Desktop\\Git\\online-quiz-vueapp\\back-end\\OnlineQuiz\\OnlineQuiz\\obj\\Release\\net5\.0\\PubTmp\\EFSQLScripts\\OnlineQuiz\.Models\.OnlineQuizContext\.sql$" />
+  </parameter>
+</parameters>

@@ -82,7 +82,7 @@ export default {
   methods: {
     async getQuestion() {
       await Axios.get(
-        `https://localhost:44312/api/Questions/${this.questionId}`
+        `https://onlinequizapi.azurewebsites.net/api/Questions/${this.questionId}`
       )
         .then((response) => {
           console.log(response.data);

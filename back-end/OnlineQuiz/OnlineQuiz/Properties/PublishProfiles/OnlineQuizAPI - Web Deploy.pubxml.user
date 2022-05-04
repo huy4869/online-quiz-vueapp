@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAqVAB/mMB+UmceHHReRi4DQAAAAACAAAAAAAQZgAAAAEAACAAAABvxWfFFw8amN8PZOz6JHYkFlA1A8Q1jArIVrAYA2ZgtQAAAAAOgAAAAAIAACAAAAB8795PZUfLCEnFvfXMZvfPj05uWq+b2tco4sYRTCoQX4AAAAB4HXdF0dL3AODO1syebIVjwG8XpGlybpnsl2WWAheNRwBs7FXRjbTJFoAnSKqEFJRm2c7iEd1zInFM0WdYC1HCU1M3abtjY+gfqY45UoDetbsdwoj9t2YYU19xioz2jVg3st0Ao4MoN0FxnUin5wpu9h3nCup2Tn3bNTobm/XWMUAAAADBbRswtz6lQq1O6TvHyWnvDLQJ6lxROPfqqfCE63HMxi9eEUd2lSbG6+MMc2C1ryWlzamLDb/6i4YcoGu/Rqdi</EncryptedPassword>
+    <History>True|2022-05-04T12:35:50.5326193Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="OnlineQuiz.Models.OnlineQuizContext">
+      <Value>Data Source=tcp:onlinequizserver.database.windows.net,1433%3bInitial Catalog=OnlineQuiz%3bUser Id=huychan%40onlinequizserver%3bPassword=Aptx%404869</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

@@ -48,7 +48,7 @@ export default {
     },
     async getScore() {
       await Axios.post(
-        `https://localhost:44312/api/Questions/GetMarkForQuestion`,
+        `https://onlinequizapi.azurewebsites.net/api/Questions/GetMarkForQuestion`,
         this.questions
       )
         .then((response) => {

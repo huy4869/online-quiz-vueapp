@@ -107,7 +107,7 @@ export default {
         options: options,
       };
       console.log(question);
-      await Axios.post(`https://localhost:44312/api/Questions`, question, {
+      await Axios.post(`https://onlinequizapi.azurewebsites.net/api/Questions`, question, {
         headers: {
           Authorization: `Bearer ${this.$cookies.get("token")}`,
         },

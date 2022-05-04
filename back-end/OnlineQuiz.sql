@@ -48,10 +48,3 @@ INSERT [dbo].[Options] (ID, questionID, content, isRight) VALUES (1, 3,'vit', N'
 INSERT [dbo].[Options] (ID, questionID, content, isRight) VALUES (2, 3,'ngan', N'False')
 INSERT [dbo].[Options] (ID, questionID, content, isRight) VALUES (3, 3,'ngong', N'False')
 
-
-select * from Questions order by id desc
-select * from Options order by questionID desc
-select * from Users
-select * from Result
-
-delete from Options where questionID = 17
